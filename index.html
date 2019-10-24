@@ -6,38 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
+
 </head>
 
 <body>
 
+<nav>
 <ul class="navigation">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">Who is Barseana?</a></li>
-    <li><a href="#portfolio">Showcase</a></li>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
+    <li><a href="#home" class="home">Home</a></li>
+    <li><a href="#about" class="who">Barseana?</a></li>
+    <li><a href="#portfolio" class="port">Showcase</a></li>
 </ul>
+
+<div class="hamburger">
+    <div class="burger"></div>
+    <div class="burger"></div>
+    <div class="burger"></div>
+</div>
+</nav>
 
 <main>
 <h1>Welcome to my Portfolio.</h1>
-
-
 </main>
 
-<img src="barseana.jpg" class="center" alt="Barseana's picture" height="500" width="500">
+<img src="barseana.jpg" class="bigBarseana" alt="Barseana's picture" height="500" width="500">
 
-<section class="left"><img src="barseana-small.jpg" class="face" alt="Barseana's headshot" height="200" width="200"></section>
+<section class="smallBarseana"><img src="barseana-small.jpg" class="face" alt="Barseana's headshot" height="200" width="200"></section>
 
-<section class="bio"> <h2 class="barseana"> Who is Barseana? (pronounced Bar-shawn-a)</h2> Greetings! My name is <i>Barseana Simond</i>. I am a Full Stack Developer. I enjoy developing ideas and solutions. I live by the phrase, "There is more than one way to skin a cat." (No, I have never skinned a cat.) Challenges intrigue me and help me advance my technical skills.  I have been coding on and off for the last 13 years; taking time off to travel abroad. <br><br>In my free time, I enjoy vegetable gardening and volunteering at local non-profit organizations. While volunteering, I was able to travel to several small countries. Traveling has taught me to minimize and not take things for granted. Minimizing has also helped me with coding by fully utilizing what I have available.  
+<section class="bio"> <h2 class="barseana"> Who is Barseana?<br> (pronounced Bar-shawn-a)</h2> <br>Greetings! My name is <i>Barseana Simond</i>. I am a Full Stack Developer. I enjoy developing ideas and solutions. I live by the phrase, "There is more than one way to skin a cat." (No, I have never skinned a cat.) Challenges intrigue me and help me advance my technical skills.  I have been coding on and off for the last 13 years; taking time off to travel abroad. <br><br>In my free time, I enjoy vegetable gardening and volunteering at local non-profit organizations. While volunteering, I was able to travel to several small countries. Traveling has taught me to minimize and not take things for granted. Minimizing has also helped me with coding by fully utilizing what I have available.  
 </section>
 
-<section class="description"><h2>Description of project.</h2>Describe here. Describe here. Describe here. Describe here. Describe here. Describe here. Describe here. Describe here. 
+<section class="description"><h2>Description of project.</h2><br>Describe here. Describe here. Describe here. Describe here. Describe here. Describe here. Describe here. Describe here. 
 </section>
 
 <section class="screenshot"><h2>Screenshot</h2>
 <img src="placeholder.jpg" class="placeholder" alt="image placeholder" height="250" width="400">
-
 </section>
 
 
@@ -54,5 +57,7 @@
     <li><a href="github">GitHub</a></li>
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 </body>
 </html>
