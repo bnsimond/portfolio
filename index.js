@@ -4,19 +4,19 @@ function addListeners (){
         })
                     
     $(".home").click(e=>{
-        $(".home").show()
+        $(".home, .hero").fadeIn(500)
         $(".bio").hide()
-        $(".description, .screenshot, .links").hide()
+        $(".collection, .screenshot, .links").hide()
     })
     
     $(".who").click(e=>{
         $(".bio").show()
-        $(".description, .screenshot, .links").hide()
+        $(".collection, .screenshot, .hero, .links").hide()
     })
 
     $(".port").click(e=>{
-        $(".bio").hide()
-        $(".description, .screenshot, .links").show()
+        $(".bio, .hero").hide()
+        $(".collection, .screenshot, .links").show()
     })
 }
 

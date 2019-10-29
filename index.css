@@ -3,7 +3,7 @@
     padding: 0;
     color: black;
     box-sizing: border-box;
-    text-align: left;
+    /* text-align: left; */
     }
 
 nav {
@@ -67,13 +67,17 @@ h2 {
     color: #9E4E56;
 }
 
-.bio, .description {
+.bio, .collection {
     margin: 10px 25px 10px 25px;
     display: block;
     padding: 0;
     text-align: justify;
 }
 
+.bio img {
+    display: block;
+    margin: 0 auto;
+}
 
 li a {
     display: block;
@@ -83,14 +87,20 @@ li a {
     padding: 14px;
     text-decoration: none;
     background-color:#EBDA98;
+    transition: all 1000ms ease; 
 }
 
 a:hover {
     background-color: #A05158;
 }
 
-.face {
-    margin: 25px;
+.hero {
+    text-align: center;
+}
+
+.face, .faces {
+    display: block;
+    margin: 25px auto;
 }
 
 .navigation a.active {
@@ -131,12 +141,11 @@ h3 {
     display:show;  
 }
 
-.smallBarseana, .placeholder {
+.face, .placeholder {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    padding: 10px 0 0 0;
 }
 
 .placeholder {
@@ -160,12 +169,12 @@ section.screenshot {
     margin: 0 25px 0 25px;
 }
 
-@media screen and (max-width:500px) {
+/* @media screen and (max-width:500px) { */
     .bigBarseana {
         display: none;
     }
 
-    .description, .bio, .screenshot, .links {
+    .collection, .bio, .screenshot, .links {
         display: none;
     }
 
@@ -174,7 +183,7 @@ section.screenshot {
         margin-right: auto;
         display: block;
     }
-}
+/* } */
 
 @media screen and (min-width:768px) {
     .navigation {
@@ -185,12 +194,16 @@ section.screenshot {
         display: none;
     }
 
-    .smallBarseana {
-        float: left;
-        margin: 25px;
+    .face {
+        display: none;
     }
 
-    .bio, .description, .screenshot, .links, .smallBarseana {
+    .bigBarseana {
+        display: block;
+        margin: 25px auto;
+    }
+
+    .bio, .collection, .screenshot, .links, .smallBarseana {
         display: none;
     }
 
