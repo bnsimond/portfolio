@@ -181,6 +181,10 @@ section.screenshot {
         height: auto;
     }
 
+    .links {
+        text-align: center;
+    }
+    
     .collection, .bio, .screenshot, .links {
         display: none;
     }
