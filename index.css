@@ -101,6 +101,8 @@ a:hover {
 .face, .faces {
     display: block;
     margin: 25px auto;
+    width: 200px;
+    height: auto;
 }
 
 .navigation a.active {
@@ -132,6 +134,10 @@ h1 {
 h3 {
     text-align: center;
     color: #9E4E56;
+}
+
+p {
+    margin: 15px 0;
 }
 
 .bigBarseana {
@@ -169,9 +175,10 @@ section.screenshot {
     margin: 0 25px 0 25px;
 }
 
-/* @media screen and (max-width:500px) { */
     .bigBarseana {
         display: none;
+        width: 500px;
+        height: auto;
     }
 
     .collection, .bio, .screenshot, .links {
@@ -182,8 +189,9 @@ section.screenshot {
         margin-left: auto;
         margin-right: auto;
         display: block;
+        width: 400px;
+        height: auto; 
     }
-/* } */
 
 @media screen and (min-width:768px) {
     .navigation {
